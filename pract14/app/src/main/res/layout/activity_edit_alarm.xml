@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF82"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок и кнопка назад -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:text="@string/edit_alarm"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_column="1"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_rounded"
+                android:contentDescription="@string/back"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_media_previous" />
+        </GridLayout>
+
+        <!-- Время и дата -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <EditText
+                android:id="@+id/et_alarm_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="no"
+                android:background="#FFFFFF"
+                android:hint="@string/time_hint"
+                android:inputType="time"
+                android:padding="12dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_alarm_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="no"
+                android:background="#FFFFFF"
+                android:hint="@string/date_hint"
+                android:inputType="date"
+                android:padding="12dp"
+                android:textSize="15sp" />
+        </GridLayout>
+
+        <!-- Заголовок для дней недели -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/repeat_daily"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Дни недели -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Понедельник -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Вторник -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuesday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Среда -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wednesday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Четверг -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thursday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Пятница -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Суббота -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saturday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Воскресенье -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:buttonTint="#FFD54F" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunday"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Кнопка Удалить будильник -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#EF5350"
+            android:text="@string/delete_alarm"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Кнопка Сохранить будильник -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#A5D6A7"
+            android:text="@string/save_alarm"
+            android:background="@drawable/button_rounded"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Нижняя навигация -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#8BC34A"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/listButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/baseline_format_list_bulleted_24"
+                android:gravity="center"
+                android:text="@string/nav_list"
+                android:textColor="#FF5252"
+                android:textSize="11sp"
+                app:drawableTint="#FF5252" />
+
+            <TextView
+                android:id="@+id/alarmButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/baseline_access_alarm_24"
+                android:gravity="center"
+                android:text="@string/nav_alarm"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                app:drawableTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/calendarButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/baseline_calendar_today_24"
+                android:gravity="center"
+                android:text="@string/nav_calendar"
+                android:textColor="#FF5252"
+                android:textSize="11sp"
+                app:drawableTint="#FF5252" />
+
+            <TextView
+                android:id="@+id/settingsButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/baseline_settings_24"
+                android:gravity="center"
+                android:text="@string/nav_settings"
+                android:textColor="#FF5252"
+                android:textSize="11sp"
+                app:drawableTint="#FF5252" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
