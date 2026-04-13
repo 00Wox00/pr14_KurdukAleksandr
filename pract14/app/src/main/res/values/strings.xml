@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pract14</string>
+
+    <!-- Навигация -->
+    <string name="nav_list">List</string>
+    <string name="nav_alarm">Alarm</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_settings">Settings</string>
+    <string name="back">Назад</string>
+
+    <!-- GeneralActivity -->
+    <string name="task_list">Список дел</string>
+    <string name="add_task_btn">Добавить задачу</string>
+    <string name="task1_title">Вечерний поход в кино</string>
+    <string name="task1_desc">Идем в кино с коллегами</string>
+    <string name="task1_date">10.02.2021\n19:40</string>
+    <string name="task2_title">Забрать заказ Ozon</string>
+    <string name="task2_desc">Пункт выдачи на ул. Ленина, 103</string>
+    <string name="task2_date">10.02.2021\n19:40</string>
+    <string name="task3_title">Запись в автосервис</string>
+    <string name="task3_desc">Сдать автомобиль в автосервис на ул. Бисертская, д. 14. Замена масла</string>
+    <string name="task3_date">10.02.2021\n19:40</string>
+
+    <!-- AddTaskActivity -->
+    <string name="add_task">Добавить задачу</string>
+    <string name="task_title">Заголовок задачи</string>
+    <string name="time_hint">16:30</string>
+    <string name="date_hint">14.01.2021</string>
+    <string name="task_description">Описание задачи</string>
+    <string name="save_task">Записать задачу</string>
+
+    <!-- EditAlarmActivity -->
+    <string name="edit_alarm">Изменить будильник</string>
+    <string name="repeat_daily">Повторять каждый день</string>
+    <string name="delete_alarm">Удалить будильник</string>
+    <string name="save_alarm">Сохранить будильник</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+
+    <!-- ProfileActivity -->
+    <string name="profile_title">Профиль пользователя</string>
+    <string name="not_logged_in">Вход не выполнен</string>
+    <string name="login">Войти</string>
+    <string name="register">Регистрация</string>
+    <string name="avatar">Аватар пользователя</string>
+</resources>
